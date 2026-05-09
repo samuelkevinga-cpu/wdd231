@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 | Kevin Samuel Pacheco García</title>
+  <meta name="description" content="WDD 231 Homepage for the projects and certificates of kevin samuel Pacheco garcía">
+  <meta name="author" content="Kevin Samuel Pacheco García">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Supermercado+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/page-logo.svg" alt="Site logo" class="logo">
+    <span class="site-name">kevin Samuel Pacheco García</span>
+    <button id="hamburger" aria-expanded="false">
+      &#9776;
+    </button>
+  </header>
+
+  <nav id="primary-nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    <section class="about">
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          <strong>Education:</strong> Currently studying at BYU-Pathway.<br>
+          <strong>Passion:</strong> Dedicated to reading and continuous study.
+        </p>
+
+        <h3>Technical Expertise</h3>
+        <p>
+          Strong knowledge in <strong>Python, C#, and JavaScript</strong>.
+        </p>
+
+        <h3>Professional Soft Skills</h3>
+        <p>
+          • Advanced proficiency in <strong>Microsoft Excel</strong>.<br>
+          • Excellent coworker with a collaborative mindset.<br>
+          • Ability to transform complex problems into <strong>opportunities</strong>.
+        </p>
+      </div>
+
+      <div class="photo">
+        <h2>Student Photo</h2>
+        <img src="images/student-photo.png" alt="Photo of Kevin Samuel" loading="lazy" id="student-photo">
+      </div>
+    </section>
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <!--buttons to filter courses-->
+      <div class="filter-buttons">
+        <button data-filter="all" class="active-filter">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <!--Here are the credit cards-->
+      <div id="course-cards">
+      </div>
+      <p id="credit-total">
+        The total credits for the courses listed is
+        <span id="total-credits">0</span>
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <!--social links-->
+    <div class="social-links">
+      <a href="https://github.com/samuelkevinga-cpu" target="_blank" aria-label="GitHub Profile">
+        <img src="images/github-icon.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/kevinsamuelga/" target="_blank" aria-label="LinkedIn Profile">
+        <img src="images/linkedin-icon.svg" alt="LinkedIn">
+      </a>
+      <a href="https://x.com/KevinSamue78050" target="_blank" aria-label="X profile">
+        <img src="images/twitter-icon.svg" alt="X / Twitter">
+      </a>
+    </div>
+    <p>
+      &copy; <span id="currentyear"></span>
+      &bull; Kevin Samuel Pacheco García
+      &bull; Oaxaca, Mexico
+    </p>
+    <p id="lastModified">Last Modification: </p>
+  </footer>
+</body>
+
+</html>
