@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Soluciones Tecnológicas Oaxaca",
+        "address": "Avenida Xel-Há 123, Oaxaca de Juárez, Oaxaca 68000",
+        "phone": "(951) 555-0101",
+        "website": "https://www.solucionestecnoaxaca.com",
+        "image": "tecnologia.jpg",
+        "membershipLevel": 3,
+        "yearEstablished": 2016,
+        "description": "Desarrollo de software y servicios de consultoría tecnológica"
+    },
+    {
+        "name": "Sabores Zapotecas Restaurant",
+        "address": "Calle Macedonio Alcalá 456, Oaxaca de Juárez, Oaxaca 68000",
+        "phone": "(951) 555-0202",
+        "website": "https://www.saboreszapotecas.com",
+        "image": "sazon.jpg",
+        "membershipLevel": 3,
+        "yearEstablished": 2011,
+        "description": "Restaurante de cocina tradicional oaxaqueña y catering"
+    },
+    {
+        "name": "Artesanías Textiles Oaxaca",
+        "address": "Plaza Central 789, Tlacolula de Matamoros, Oaxaca 70600",
+        "phone": "(951) 555-0303",
+        "website": "https://www.artesaniastextiles.com",
+        "image": "textiles.jpg",
+        "membershipLevel": 2,
+        "yearEstablished": 2008,
+        "description": "Producción y venta de textiles y bordados tradicionales"
+    },
+    {
+        "name": "Ecoturismo Sierra Norte",
+        "address": "Camino a Guelatao 321, Ixtlán de Juárez, Oaxaca 68000",
+        "phone": "(951) 555-0404",
+        "website": "https://www.ecoturismosierranorte.com",
+        "image": "ecoturismo.jpg",
+        "membershipLevel": 2,
+        "yearEstablished": 2015,
+        "description": "Tours ecológicos y hospedaje en comunidades indígenas"
+    },
+    {
+        "name": "Café Tradicional Oaxaqueño",
+        "address": "Avenida Benito Juárez 654, Etla, Oaxaca 68050",
+        "phone": "(951) 555-0505",
+        "website": "https://www.cafetradicional.com",
+        "image": "cafe.jpg",
+        "membershipLevel": 3,
+        "yearEstablished": 2012,
+        "description": "Cultivo, procesamiento y comercialización de café de altura"
+    },
+    {
+        "name": "Galería de Arte Contemporáneo",
+        "address": "Calle García Vigil 987, Oaxaca de Juárez, Oaxaca 68000",
+        "phone": "(951) 555-0606",
+        "website": "https://www.galeriacontemporanea.com",
+        "image": "galeria-de-arte.jpg",
+        "membershipLevel": 1,
+        "yearEstablished": 2018,
+        "description": "Galería de arte moderno y contemporáneo con artistas locales"
+    },
+    {
+        "name": "Taller de Cerámica Zapoteca",
+        "address": "Barrio Xochimilco 555, San Bartolo Coyotepec, Oaxaca 71260",
+        "phone": "(951) 555-0707",
+        "website": "https://www.ceramicazapoteca.com",
+        "image": "artesanias.jpg",
+        "membershipLevel": 1,
+        "yearEstablished": 2014,
+        "description": "Elaboración y venta de cerámica negra tradicional"
+    },
+    {
+        "name": "Mezcal Premium Oaxaca",
+        "address": "Avenida Hidalgo 222, Tlacolula de Matamoros, Oaxaca 70600",
+        "phone": "(951) 555-0808",
+        "website": "https://www.mezalpremium.com",
+        "image": "mezcal.jpg",
+        "membershipLevel": 2,
+        "yearEstablished": 2010,
+        "description": "Destilería de mezcal artesanal con experiencias de cata"
+    }
+]

@@ -1,0 +1,79 @@
+/* ===== Tablet (768px – 1024px) ===== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #hamburger {
+    display: none;
+  }
+
+  #primary-nav {
+    display: flex !important;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    width: auto;
+  }
+
+  #primary-nav a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  #primary-nav a:last-child {
+    border-right: none;
+  }
+
+  header {
+    flex-wrap: nowrap;
+  }
+}
+
+/* ===== Desktop (1025px+) ===== */
+@media screen and (min-width: 1025px) {
+  #hamburger {
+    display: none;
+  }
+
+  #primary-nav {
+    display: flex !important;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    width: auto;
+  }
+
+  #primary-nav a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.5rem;
+  }
+
+  #primary-nav a:last-child {
+    border-right: none;
+  }
+
+  header {
+    padding: 1.2rem 2rem;
+    flex-wrap: nowrap;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header img {
+    width: 65px;
+  }
+
+  main {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+  }
+}
