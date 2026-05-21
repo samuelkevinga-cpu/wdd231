@@ -1,5 +1,5 @@
-/* ===== Tablet (768px – 1024px) ===== */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
   #hamburger {
     display: none;
   }
@@ -7,14 +7,12 @@
   #primary-nav {
     display: flex !important;
     flex-direction: row;
-    background-color: var(--secondary-color);
     width: auto;
   }
 
   #primary-nav a {
     border-bottom: none;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 0.75rem 1rem;
     font-size: 1rem;
   }
 
@@ -25,9 +23,41 @@
   header {
     flex-wrap: nowrap;
   }
+
+  #home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "events  weather"
+      "spots   spots";
+  }
+
+  #events {
+    grid-area: events;
+  }
+
+  #weather {
+    grid-area: weather;
+  }
+
+  #spotlights {
+    grid-area: spots;
+  }
+
+  #spotlight-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .spotlight-card {
+    flex: 1 1 220px;
+  }
+
+  #hero-overlay h1 {
+    font-size: 2rem;
+  }
 }
 
-/* ===== Desktop (1025px+) ===== */
 @media screen and (min-width: 1025px) {
   #hamburger {
     display: none;
@@ -36,7 +66,6 @@
   #primary-nav {
     display: flex !important;
     flex-direction: row;
-    background-color: var(--secondary-color);
     width: auto;
   }
 
@@ -55,7 +84,7 @@
     flex-wrap: nowrap;
   }
 
-  header h1 {
+  header h2 {
     font-size: 1.8rem;
   }
 
@@ -75,5 +104,43 @@
     align-items: center;
     gap: 0.5rem;
     padding: 2rem;
+  }
+
+  #home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "events weather spots";
+  }
+
+  #events {
+    grid-area: events;
+  }
+
+  #weather {
+    grid-area: weather;
+  }
+
+  #spotlights {
+    grid-area: spots;
+  }
+
+  #spotlight-cards {
+    flex-direction: column;
+  }
+
+  .spotlight-card {
+    flex: unset;
+  }
+
+  #hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero-overlay p {
+    font-size: 1.1rem;
+  }
+
+  #hero {
+    max-height: 550px;
   }
 }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Welcome to the Oaxaca Chamber of Commerce — supporting local businesses and community growth.">
+  <meta name="author" content="Kevin Samuel Pacheco García">
+  <title>Oaxaca Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Oaxaca Chamber of Commerce">
+  <meta property="og:description" content="Supporting local Oaxacan businesses and community growth.">
+  <meta property="og:image" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/images/facebook-image.jpg">
+  <meta property="og:url" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/index.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="images/chamber-logo.svg" alt="Oaxaca Chamber of Commerce logo" id="logo">
+      <h2>Oaxaca Chamber of Commerce</h2>
+    </div>
+    <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="contact.html">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <img src="images/oaxaca-golden-hour.jpg" alt="Oaxaca city landscape at golden hour" loading="eager" id="hero-img">
+      <div id="hero-overlay">
+        <h1>Welcome to the Oaxaca Chamber of Commerce</h1>
+        <p>Connecting local businesses, empowering our community.</p>
+        <a href="contact.html" class="join-btn">Join the Chamber</a>
+      </div>
+    </section>
+    <div id="home-grid">
+      <section id="events">
+        <h2>Current Events</h2>
+        <article class="event-card">
+          <h3>Guelaguetza</h3>
+          <p class="event-date">June 5, 2026 · 8:00 AM</p>
+          <p>Annual cultural festival celebrating Oaxacan traditions, music, and dance. Free for all members.
+          </p>
+        </article>
+
+        <article class="event-card">
+          <h3>Radish night</h3>
+          <p class="event-date">June 20–21, 2025</p>
+          <p>Experience the unique "Noche de Rábanos" festival, where artisans carve intricate designs into radishes,
+            showcasing Oaxacan creativity and culture.
+          </p>
+        </article>
+
+        <article class="event-card">
+          <h3>Zicatella beach fishing tournament</h3>
+          <p class="event-date">July 3, 2025 · 3:00 PM</p>
+          <p>Competitive fishing tournament held on Zicatella Beach, featuring local anglers and prize giveaways.
+          </p>
+        </article>
+      </section>
+      <section id="weather">
+        <h2>Oaxaca Weather</h2>
+        <div id="weather-current">
+          <p id="weather-temp">-- °C</p>
+          <p id="weather-desc">Loading...</p>
+        </div>
+        <div id="weather-forecast">
+          <h3>3-Day Forecast</h3>
+          <div class="forecast-day" id="forecast-0">
+            <p class="forecast-label">Day 1</p>
+            <p class="forecast-temp">--</p>
+          </div>
+          <div class="forecast-day" id="forecast-1">
+            <p class="forecast-label">Day 2</p>
+            <p class="forecast-temp">--</p>
+          </div>
+          <div class="forecast-day" id="forecast-2">
+            <p class="forecast-label">Day 3</p>
+            <p class="forecast-temp">--</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-cards">
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Oaxaca Chamber of Commerce. All rights reserved. |
+      Kevin Samuel Pacheco García | WDD 231
+    </p>
+    <p><span id="lastModified"></span></p>
+  </footer>
+
+</body>
+
+</html>
