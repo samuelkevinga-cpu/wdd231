@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+﻿const url = 'data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getCompanyData() {
@@ -36,9 +36,8 @@ const displayCompanies = (companies) => {
     image.setAttribute('width', '340');
     image.setAttribute('height', '180');
 
-    // FIX: typo 'yearStablished' → 'yearEstablished' in variable name (was correct in data access but sloppy)
-    const levelLabels = { 1: 'Member', 2: 'Silver', 3: 'Gold' };
-    membershipLevel.textContent = `🏅 Membership: ${levelLabels[company.membershipLevel] || company.membershipLevel}`;
+    const levelLabels = { 1: 'Member 🥉', 2: 'Silver 🥈', 3: 'Gold 🥇' };
+    membershipLevel.textContent = `🏷️ Membership: ${levelLabels[company.membershipLevel] || company.membershipLevel}`;
     yearEstablished.textContent = `📅 Est. ${company.yearEstablished}`;
     description.textContent = company.description;
 
@@ -70,3 +69,12 @@ listBtn.addEventListener('click', () => {
 });
 
 getCompanyData();
+
+const hamburger = document.getElementById('hamburger');
+const primaryNav = document.getElementById('primary-nav');
+
+if (hamburger && primaryNav) {
+  hamburger.addEventListener('click', () => {
+    primaryNav.classList.toggle('open');
+  });
+}

@@ -1,4 +1,10 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+﻿@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
 
   #hamburger {
     display: none;
@@ -59,6 +65,11 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
   #hamburger {
     display: none;
   }

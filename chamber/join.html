@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply to join the Oaxaca Chamber of Commerce.">
+  <meta name="author" content="Kevin Samuel Pacheco Garcia">
+  <title>Join | Oaxaca Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Join the Oaxaca Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership with the Oaxaca Chamber of Commerce.">
+  <meta property="og:image" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/images/facebook-image.jpg">
+  <meta property="og:url" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/join.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="images/chamber-logo.svg" alt="Oaxaca Chamber of Commerce logo" id="logo">
+      <h2>Oaxaca Chamber of Commerce</h2>
+    </div>
+    <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html" class="active">Join</a>
+      <a href="discover.html">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+    <div class="join-layout">
+      <form method="get" action="thankyou.html" class="join-form">
+        <label>First Name
+          <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required></label>
+        <label>Last Name
+          <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required></label>
+        <label>Organizational Title
+          <input type="text" name="title" title="Use at least seven letters, hyphens, or spaces"
+            autocomplete="organization-title" pattern="[A-Za-z -]{7,}"></label>
+        <label>Email
+          <input type="email" name="email" title="Enter your email address" autocomplete="email"
+            placeholder="name@example.com" required></label>
+        <label>Mobile Phone
+          <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required></label>
+        <label>Business Name
+          <input type="text" name="organization" title="Enter your business or organization name"
+            autocomplete="organization" required></label>
+
+        <label>Membership Level
+          <select name="membership" title="Choose a membership level">
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>Business Description
+          <textarea name="description" title="Describe your business or organization"></textarea></label>
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Apply for Membership">
+      </form>
+
+      <section class="membership-levels">
+        <h2>Membership Levels</h2>
+        <article class="membership-card">
+          <h3>NP Membership</h3>
+          <a href="#np-modal" data-modal="np-modal">Learn More</a>
+        </article>
+        <article class="membership-card">
+          <h3>Bronze Membership</h3>
+          <a href="#bronze-modal" data-modal="bronze-modal">Learn More</a>
+        </article>
+        <article class="membership-card">
+          <h3>Silver Membership</h3>
+          <a href="#silver-modal" data-modal="silver-modal">Learn More</a>
+        </article>
+        <article class="membership-card">
+          <h3>Gold Membership</h3>
+          <a href="#gold-modal" data-modal="gold-modal">Learn More</a>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="np-modal" class="modal">
+    <button type="button" class="close-modal">Close</button>
+    <h2>NP Membership</h2>
+    <p>No fee. Includes directory listing and community event invitations.</p>
+  </dialog>
+
+  <dialog id="bronze-modal" class="modal">
+    <button type="button" class="close-modal">Close</button>
+    <h2>Bronze Membership</h2>
+    <p>Includes directory listing, event discounts, and basic training access.</p>
+  </dialog>
+
+  <dialog id="silver-modal" class="modal">
+    <button type="button" class="close-modal">Close</button>
+    <h2>Silver Membership</h2>
+    <p>Includes Bronze benefits, extra advertising, and selected spotlight opportunities.</p>
+  </dialog>
+
+  <dialog id="gold-modal" class="modal">
+    <button type="button" class="close-modal">Close</button>
+    <h2>Gold Membership</h2>
+    <p>Includes all benefits, premium spotlight placement, and VIP event access.</p>
+  </dialog>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Oaxaca Chamber of Commerce. All rights reserved. | Kevin Samuel Pacheco
+      Garcia | WDD 231</p>
+    <p><span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
