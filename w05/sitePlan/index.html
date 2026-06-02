@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Site plan for NestU, a student-focused boutique hostel and co-living website with room browsing, booking, and location features.">
+  <meta name="author" content="Kevin Samuel Pacheco García">
+  <title>NestU — Site Plan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>NestU</h1>
+    <p>Site Plan Document — Kevin Samuel Pacheco García</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="identity-heading">
+      <h2 id="identity-heading">Site Identity</h2>
+      <div class="card">
+        <h3>Site Name</h3>
+        <p><strong>NestU</strong></p>
+        <h3>Name Rationale</h3>
+        <p>The name combines &ldquo;Nest&rdquo; (a safe, comfortable home) with &ldquo;U&rdquo; (short for University),
+          directly communicating that this is a student-oriented living space.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="purpose-heading">
+      <h2 id="purpose-heading">Site Purpose</h2>
+      <div class="card card-accent">
+        <p>NestU is a responsive three-page website targeting university students seeking affordable co-living and
+          hostel housing. It provides information on budget-friendly room options, study amenities, and community
+          features.</p>
+        <p>Students can browse rooms dynamically loaded from a JSON file, submit booking requests through a validated
+          form with student email verification and a mock payment gateway, and access location and weather information
+          to help them plan their stay.</p>
+      </div>
+      <h3>Planned Pages</h3>
+      <ul>
+        <li><strong>Home</strong> — Hero, amenities overview, featured rooms, and quick links.</li>
+        <li><strong>Rooms</strong> — Room cards loaded from <code>rooms.json</code>, filters, and booking
+          call-to-action.</li>
+        <li><strong>Visit &amp; Book</strong> — Map/location, live weather, validated booking form, and mock payment.
+        </li>
+      </ul>
+    </section>
+
+    <section class="scenarios" aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">User Scenarios</h2>
+      <blockquote>
+        <p>&ldquo;How much does a shared room cost per month, and what study amenities are included?&rdquo;</p>
+      </blockquote>
+      <blockquote>
+        <p>&ldquo;Is NestU close to my university campus, and what is the weather like in that area right now?&rdquo;
+        </p>
+      </blockquote>
+    </section>
+
+    <section aria-labelledby="colors-heading">
+      <h2 id="colors-heading">Color Scheme</h2>
+      <p>Primary greens establish brand identity; light blue accents add contrast for secondary cards, scenario quotes,
+        and wireframe alternates.</p>
+      <ul class="palette">
+        <li>
+          <span class="swatch swatch-dark-green" aria-hidden="true"></span>
+          <span><strong>#1b5e20</strong> — Strong deep green: header background and main section headings.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-medium-green" aria-hidden="true"></span>
+          <span><strong>#388e3c</strong> — Medium green: links, borders, and accent elements.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-light-green" aria-hidden="true"></span>
+          <span><strong>#e8f5e9</strong> — Light green: paragraph background cards and info boxes.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-white" aria-hidden="true"></span>
+          <span><strong>#ffffff</strong> — White: main page background.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-text" aria-hidden="true"></span>
+          <span><strong>#212121</strong> — Dark gray: all body text for readability.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-blue-light" aria-hidden="true"></span>
+          <span><strong>#e3f2fd</strong> — Light blue: contrast cards, scenario blocks, and alternate wireframe
+            zones.</span>
+        </li>
+        <li>
+          <span class="swatch swatch-blue-medium" aria-hidden="true"></span>
+          <span><strong>#0288d1</strong> — Medium blue: hover states, accent borders, and secondary emphasis.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="typography-heading">
+      <h2 id="typography-heading">Typography</h2>
+      <div class="card type-sample">
+        <p><strong>Poppins</strong> (Google Font) — all headings (h1–h3) and the site name.</p>
+        <p><strong>Inter</strong> (Google Font) — all body text, paragraphs, and labels.</p>
+        <h1>NestU — Live Where You Learn</h1>
+        <h2>Affordable Co-Living for Students</h2>
+        <h3>Study Lounges &amp; High-Speed Wi-Fi</h3>
+        <p>Shared rooms from $420/month include desk space, quiet hours, and 24/7 secure access. Book your nest near
+          campus today.</p>
+        <label for="sample-email">Student email (.edu)</label>
+        <input type="email" id="sample-email" name="sample-email" placeholder="you@university.edu" disabled>
+      </div>
+    </section>
+
+    <section aria-labelledby="wireframes-heading">
+      <h2 id="wireframes-heading">Wireframes</h2>
+      <p>Simple layout mockups built with HTML <code>div</code> elements and CSS only — no images. Mobile stacks all
+        regions; desktop uses a grid for amenities and featured rooms.</p>
+
+      <div class="wireframes">
+        <div class="wireframe mobile" role="img"
+          aria-label="Mobile wireframe: stacked header, hero, three amenity cards, two featured rooms, and footer">
+          <p>Mobile Layout</p>
+          <div class="wireframe-box">Header / Nav</div>
+          <div class="wireframe-box">Hero Section</div>
+          <div class="wireframe-box">Amenities Card 1</div>
+          <div class="wireframe-box alt">Amenities Card 2</div>
+          <div class="wireframe-box">Amenities Card 3</div>
+          <div class="wireframe-box alt">Featured Room 1</div>
+          <div class="wireframe-box">Featured Room 2</div>
+          <div class="wireframe-box">Footer</div>
+        </div>
+
+        <div class="wireframe desktop" role="img"
+          aria-label="Desktop wireframe: full-width header and hero, three-column amenities, two-column featured rooms, and footer">
+          <p>Desktop Layout</p>
+          <div class="wireframe-grid">
+            <div class="wireframe-box span-full">Header / Nav</div>
+            <div class="wireframe-box span-full">Hero Section</div>
+            <div class="wireframe-box">Amenities Card 1</div>
+            <div class="wireframe-box alt">Amenities Card 2</div>
+            <div class="wireframe-box">Amenities Card 3</div>
+            <div class="wireframe-box alt span-two">Featured Room 1</div>
+            <div class="wireframe-box">Featured Room 2</div>
+            <div class="wireframe-box span-full">Footer</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>NestU Site Plan &copy; 2026 — Kevin Samuel Pacheco García</p>
+  </footer>
+</body>
+
+</html>
