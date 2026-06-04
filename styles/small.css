@@ -195,6 +195,29 @@ section h2 {
   font-size: 0.95rem;
 }
 
+dialog {
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--gap);
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+  margin-top: var(--gap);
+  padding: 0.4rem 1rem;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
 /*Footer*/
 footer {
   background-color: var(--light-gray);
