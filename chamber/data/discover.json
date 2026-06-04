@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Monte Albán",
+    "address": "Santa María Atzompa, Oaxaca 71256",
+    "description": "Ancient Zapotec capital with panoramic valley views and museum exhibits.",
+    "img": "images/place1.webp"
+  },
+  {
+    "name": "Templo de Santo Domingo",
+    "address": "Macedonio Alcalá s/n, Centro, Oaxaca 68000",
+    "description": "Baroque church and former convent, now home to the Oaxaca Cultural Museum.",
+    "img": "images/place2.webp"
+  },
+  {
+    "name": "Hierve el Agua",
+    "address": "San Lorenzo Albarradas, Oaxaca 70470",
+    "description": "Petrified waterfall formations and natural infinity pools in the Sierra Madre.",
+    "img": "images/place3.webp"
+  },
+  {
+    "name": "Mercado 20 de Noviembre",
+    "address": "20 de Noviembre, Centro, Oaxaca 68000",
+    "description": "Vibrant market famous for Oaxacan mole, chapulines, and pasillo de humo.",
+    "img": "images/place4.webp"
+  },
+  {
+    "name": "Árbol del Tule",
+    "address": "2 de Abril, Santa María del Tule, Oaxaca 68297",
+    "description": "One of the world's widest trees, a sacred Montezuma cypress over 2,000 years old.",
+    "img": "images/place5.webp"
+  },
+  {
+    "name": "Zócalo de Oaxaca",
+    "address": "Plaza de la Constitución, Centro, Oaxaca 68000",
+    "description": "Historic main square surrounded by cafés, the cathedral, and live marimba music.",
+    "img": "images/place6.webp"
+  },
+  {
+    "name": "Museo de las Culturas",
+    "address": "Gurrión y Macedonio Alcalá, Centro, Oaxaca 68000",
+    "description": "Treasures from Monte Albán and Mixtec gold, housed in the Ex Convento de Santo Domingo.",
+    "img": "images/place7.webp"
+  },
+  {
+    "name": "Mitla",
+    "address": "Carretera Oaxaca–Mitla km 46, San Pablo Villa de Mitla 70430",
+    "description": "Mixtec ruins renowned for intricate geometric stone fretwork and columned halls.",
+    "img": "images/place8.webp"
+  }
+]

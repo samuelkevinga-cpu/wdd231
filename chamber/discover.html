@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover attractions and points of interest in Oaxaca with the Chamber of Commerce.">
+  <meta name="author" content="Kevin Samuel Pacheco Garcia">
+  <title>Discover | Oaxaca Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Discover Oaxaca">
+  <meta property="og:description" content="Explore local attractions and landmarks in the Oaxaca region.">
+  <meta property="og:image" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/images/facebook-image.jpg">
+  <meta property="og:url" content="https://samuelkevinga-cpu.github.io/wdd231/chamber/discover.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="scripts/date.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body class="discover-page">
+  <header>
+    <div>
+      <img src="images/chamber-logo.svg" alt="Oaxaca Chamber of Commerce logo" id="logo">
+      <h2>Oaxaca Chamber of Commerce</h2>
+    </div>
+    <button id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active">Discover</a>
+    </nav>
+  </header>
+
+  <main>
+    <p id="visit-banner" role="status" aria-live="polite">Welcome! Let us know if you have any questions.</p>
+    <h1>Discover Oaxaca</h1>
+    <section id="discover-cards" aria-label="Points of interest"></section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Oaxaca Chamber of Commerce. All rights reserved. |
+      Kevin Samuel Pacheco Garcia | WDD 231
+    </p>
+    <p><span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>

@@ -154,4 +154,22 @@
   #hero {
     max-height: 550px;
   }
+
+  #discover-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card4 card5"
+      "card6 card7 card8";
+  }
+
+  .discover-card figure img {
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .discover-card figure img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  }
 }
