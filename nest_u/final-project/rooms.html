@@ -11,8 +11,9 @@
   <meta property="og:title" content="NestU Rooms">
   <meta property="og:description" content="Compare available student rooms by type, price, capacity, and amenities.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://samuelkevinga-cpu.github.io/wdd231/nest_u/final-project/rooms.html">
   <meta property="og:image"
-    content="https://github.com/samuelkevinga-cpu/wdd231/blob/main/nest_u/final-project/images/private-studio.jpg">
+    content="https://samuelkevinga-cpu.github.io/wdd231/nest_u/final-project/images/shared-suite.jpg">
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +52,8 @@
     </section>
     <!-- Room browser -->
     <section class="section room-browser">
-      <div class="filter-bar" aria-label="Room filters">
+      <h2 class="visually-hidden">Browse and filter rooms</h2>
+      <div class="filter-bar" role="group" aria-label="Room filters">
         <button class="filter-button active" type="button" data-filter="all">All Rooms</button>
         <button class="filter-button" type="button" data-filter="shared">Shared Rooms</button>
         <button class="filter-button" type="button" data-filter="private">Private Rooms</button>
