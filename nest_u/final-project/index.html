@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head: link to stylesheets and scripts. also with the google fonts-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NestU | Affordable Student Co-Living</title>
+  <meta name="description" content="NestU offers affordable, welcoming student co-living and hostel rooms near campus.">
+  <meta name="author" content="Kevin Samuel Pacheco García">
+  <meta property="og:title" content="NestU | Live Where You Learn">
+  <meta property="og:description"
+    content="Modern student housing with shared spaces, study lounges, and affordable rooms near campus.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/room-images/private-studio.svg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/rooms.js"></script>
+</head>
+
+<body data-page="home">
+  <!--logo, nav and menu button-->
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="NestU home">NestU</a>
+    <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="rooms.html" data-nav="rooms">Rooms</a>
+      <a href="visit-book.html" data-nav="visit">Visit &amp; Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <!--hero section with button to look at rooms-->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Student housing near campus</p>
+        <h1>Live Where You Learn</h1>
+        <p>NestU makes student life simpler with affordable rooms, shared spaces, secure access, and a welcoming
+          community close to your classes.</p>
+        <a class="button" href="rooms.html">Explore Rooms</a>
+      </div>
+    </section>
+    <!-- amenities section -->
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Amenities</p>
+        <h2>Everything students need day to day</h2>
+      </div>
+      <div class="amenity-grid">
+        <article class="feature-card">
+          <span class="feature-icon">Wi</span>
+          <h3>High-Speed Wi-Fi</h3>
+          <p>Reliable internet for studying, streaming, and online classes.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">St</span>
+          <h3>Study Lounges</h3>
+          <p>Quiet shared spaces made for focused work and group projects.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">24</span>
+          <h3>24/7 Secure Access</h3>
+          <p>Controlled entry and bright common areas for daily peace of mind.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">Ev</span>
+          <h3>Community Events</h3>
+          <p>Simple weekly activities that help students meet and belong.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">La</span>
+          <h3>Laundry Facilities</h3>
+          <p>On-site laundry rooms make the weekly routine easier.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">Ki</span>
+          <h3>Shared Kitchen</h3>
+          <p>Clean cooking spaces with storage, appliances, and dining tables.</p>
+        </article>
+      </div>
+    </section>
+    <!-- featured rooms section -->
+    <section class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">Featured rooms</p>
+        <h2>Popular student picks</h2>
+      </div>
+      <div id="featured-rooms" class="room-grid"></div>
+    </section>
+
+    <section class="section community">
+      <div>
+        <p class="eyebrow">Community</p>
+        <h2>Build your campus life from home</h2>
+      </div>
+      <p>At NestU, residents share more than a building. Study groups, movie nights, kitchen conversations, and friendly
+        common spaces make it easier to settle in and stay connected while you work toward your goals.</p>
+    </section>
+  </main>
+  <!--footer with copyright, attributions and video demonstration-->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> NestU. All rights reserved.</p>
+    <a href="attributions.html">Attributions</a>
+    <!-- TODO: Replace # with your YouTube or Loom video URL before submitting -->
+    <a href="#">Video Demonstration</a>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head: link to stylesheets and scripts. also with the google fonts-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NestU Visit & Book | Schedule Student Housing</title>
+  <meta name="description" content="Visit NestU, check local weather, and submit a student room booking request.">
+  <meta name="author" content="Kevin Samuel Pacheco García">
+  <meta property="og:title" content="Visit & Book NestU">
+  <meta property="og:description" content="Plan your visit and send a booking request for NestU student housing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/room-images/private-loft.svg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/weather.js"></script>
+  <script type="module" src="js/booking.js"></script>
+</head>
+
+<body data-page="visit">
+  <!--header: logo, nav and menu button-->
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="NestU home">NestU</a>
+    <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="rooms.html" data-nav="rooms">Rooms</a>
+      <a href="visit-book.html" data-nav="visit">Visit &amp; Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page intro -->
+    <section class="page-intro">
+      <p class="eyebrow">Visit &amp; Book</p>
+      <h1>Plan your move to NestU</h1>
+      <p>Find us near campus, check today&apos;s weather, and request your room.</p>
+    </section>
+    <!-- location and weather section -->
+    <section class="section two-column">
+      <article class="info-panel">
+        <p class="eyebrow">Location</p>
+        <h2>Come see the space</h2>
+        <p><strong>Address:</strong> 210 University Green, Rexburg, ID 83440</p>
+        <p><strong>Office Hours:</strong> Monday to Saturday, 9:00 AM - 6:00 PM</p>
+        <div class="map-frame">
+          <iframe title="Map showing NestU near campus"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-111.797%2C43.814%2C-111.771%2C43.832&amp;layer=mapnik"
+            loading="lazy">
+          </iframe>
+        </div>
+      </article>
+      <!-- Weather card with live update from weather.js -->
+      <article class="info-panel weather-card">
+        <p class="eyebrow">Weather</p>
+        <h2>Campus area conditions</h2>
+        <div id="weather-status" aria-live="polite">Loading weather...</div>
+      </article>
+    </section>
+    <!-- booking form section -->
+    <section class="section booking-section">
+      <div class="section-heading">
+        <p class="eyebrow">Booking request</p>
+        <h2>Reserve your student room</h2>
+      </div>
+      <form id="booking-form" class="booking-form" action="thankyou.html" method="get" novalidate>
+        <label>
+          Full Name
+          <input type="text" name="fullName" id="fullName" required>
+          <span class="error-message" id="fullNameError"></span>
+        </label>
+
+        <label>
+          Student Email
+          <input type="email" name="studentEmail" id="studentEmail" required>
+          <span class="error-message" id="studentEmailError"></span>
+        </label>
+
+        <label>
+          Phone Number
+          <input type="tel" name="phone" id="phone" required>
+          <span class="error-message" id="phoneError"></span>
+        </label>
+
+        <label>
+          Room Type Selection
+          <select name="roomType" id="roomType" required>
+            <option value="">Choose a room type</option>
+            <option value="Shared Room">Shared Room</option>
+            <option value="Private Room">Private Room</option>
+          </select>
+          <span class="error-message" id="roomTypeError"></span>
+        </label>
+
+        <label>
+          Move-In Date
+          <input type="date" name="moveInDate" id="moveInDate" required>
+          <span class="error-message" id="moveInDateError"></span>
+        </label>
+
+        <label>
+          Number of Months
+          <input type="number" name="months" id="months" min="1" max="24" required>
+          <span class="error-message" id="monthsError"></span>
+        </label>
+
+        <fieldset class="payment-fieldset">
+          <legend>Payment Method</legend>
+          <label><input type="radio" name="paymentMethod" value="Credit Card" required> Credit Card</label>
+          <label><input type="radio" name="paymentMethod" value="Debit Card"> Debit Card</label>
+          <label><input type="radio" name="paymentMethod" value="PayPal"> PayPal</label>
+          <span class="error-message" id="paymentMethodError"></span>
+        </fieldset>
+
+        <button class="button" type="submit">Submit Booking Request</button>
+      </form>
+    </section>
+
+  </main>
+  <!--footer with copyright, attributions and video demonstration-->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> NestU. All rights reserved.</p>
+    <a href="attributions.html">Attributions</a>
+    <!-- TODO: Replace # with your YouTube or Loom video URL before submitting -->
+    <a href="#">Video Demonstration</a>
+  </footer>
+</body>
+
+</html>

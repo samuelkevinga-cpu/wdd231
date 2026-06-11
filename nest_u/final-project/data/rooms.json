@@ -1,0 +1,272 @@
+[
+  {
+    "id": "room-101",
+    "name": "Maple Shared Suite",
+    "price": 420,
+    "type": "Shared Room",
+    "capacity": 4,
+    "image": "images/room-images/shared-suite.jpg",
+    "alt": "Illustration of a bright shared student suite with bunk beds",
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "Shared Kitchen",
+      "Study Desk",
+      "Laundry Access"
+    ],
+    "availability": "Available",
+    "featured": true,
+    "description": "A budget-friendly shared suite with desks, storage, and quick access to the shared kitchen."
+  },
+  {
+    "id": "room-102",
+    "name": "Cedar Private Studio",
+    "price": 720,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-studio.jpg",
+    "alt": "Illustration of a private student studio with bed and desk",
+    "amenities": [
+      "Private Desk",
+      "Mini Fridge",
+      "High-Speed Wi-Fi",
+      "Secure Access"
+    ],
+    "availability": "Available",
+    "featured": true,
+    "description": "A quiet private studio for students who want personal space and a comfortable study setup."
+  },
+  {
+    "id": "room-103",
+    "name": "Oak Study Pod",
+    "price": 390,
+    "type": "Shared Room",
+    "capacity": 6,
+    "image": "images/room-images/shared-pod.jpg",
+    "alt": "Illustration of a shared room with compact study pods",
+    "amenities": [
+      "Study Lounge",
+      "Locker Storage",
+      "High-Speed Wi-Fi",
+      "Community Events"
+    ],
+    "availability": "Limited",
+    "featured": true,
+    "description": "A lively shared room with individual study pods and a strong community feel."
+  },
+  {
+    "id": "room-104",
+    "name": "Birch Quiet Room",
+    "price": 650,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-room.jpg",
+    "alt": "Illustration of a private student room with green bedding",
+    "amenities": [
+      "Private Desk",
+      "Closet",
+      "Laundry Access",
+      "Secure Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A simple private room near the quiet study lounge for focused students."
+  },
+  {
+    "id": "room-105",
+    "name": "Willow Double",
+    "price": 480,
+    "type": "Shared Room",
+    "capacity": 2,
+    "image": "images/room-images/shared-double.jpg",
+    "alt": "Illustration of a two-person student room with desks",
+    "amenities": [
+      "Two Desks",
+      "Shared Kitchen",
+      "High-Speed Wi-Fi",
+      "Laundry Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A two-student room with balanced privacy and affordability."
+  },
+  {
+    "id": "room-106",
+    "name": "Pine Corner Studio",
+    "price": 760,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-corner.jpg",
+    "alt": "Illustration of a corner private studio with sunlight",
+    "amenities": [
+      "Corner Window",
+      "Private Desk",
+      "Mini Fridge",
+      "High-Speed Wi-Fi"
+    ],
+    "availability": "Limited",
+    "featured": false,
+    "description": "A private corner room with extra daylight and a roomy desk area."
+  },
+  {
+    "id": "room-107",
+    "name": "Aspen Shared Loft",
+    "price": 440,
+    "type": "Shared Room",
+    "capacity": 4,
+    "image": "images/room-images/shared-loft.jpg",
+    "alt": "Illustration of a shared loft-style student room",
+    "amenities": [
+      "Loft Beds",
+      "Study Desk",
+      "Community Events",
+      "Secure Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A loft-style shared room that keeps the floor open for study and storage."
+  },
+  {
+    "id": "room-108",
+    "name": "Elm Private Loft",
+    "price": 820,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-loft.jpg",
+    "alt": "Illustration of a private loft room with desk below bed",
+    "amenities": [
+      "Loft Bed",
+      "Private Desk",
+      "Closet",
+      "Secure Access"
+    ],
+    "availability": "Waitlist",
+    "featured": false,
+    "description": "A compact private loft that makes smart use of vertical space."
+  },
+  {
+    "id": "room-109",
+    "name": "Spruce Value Suite",
+    "price": 365,
+    "type": "Shared Room",
+    "capacity": 6,
+    "image": "images/room-images/shared-suite.jpg",
+    "alt": "Illustration of an affordable shared student suite",
+    "amenities": [
+      "High-Speed Wi-Fi",
+      "Shared Kitchen",
+      "Locker Storage",
+      "Laundry Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "Our lowest-priced room option for students who want value and community."
+  },
+  {
+    "id": "room-110",
+    "name": "Juniper Solo Room",
+    "price": 690,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-room.jpg",
+    "alt": "Illustration of a simple solo student room",
+    "amenities": [
+      "Private Desk",
+      "High-Speed Wi-Fi",
+      "Laundry Access",
+      "Study Lounge"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A private room with the essentials for independent student living."
+  },
+  {
+    "id": "room-111",
+    "name": "Fern Group Room",
+    "price": 410,
+    "type": "Shared Room",
+    "capacity": 5,
+    "image": "images/room-images/shared-pod.jpg",
+    "alt": "Illustration of a group shared room with study stations",
+    "amenities": [
+      "Study Stations",
+      "Shared Kitchen",
+      "High-Speed Wi-Fi",
+      "Community Events"
+    ],
+    "availability": "Limited",
+    "featured": false,
+    "description": "A social room for students who enjoy shared routines and group study."
+  },
+  {
+    "id": "room-112",
+    "name": "Sage Private Plus",
+    "price": 860,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-studio.jpg",
+    "alt": "Illustration of a larger private student studio",
+    "amenities": [
+      "Large Desk",
+      "Mini Fridge",
+      "Closet",
+      "Secure Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A larger private room with added storage for longer stays."
+  },
+  {
+    "id": "room-113",
+    "name": "Ivy Double Study",
+    "price": 510,
+    "type": "Shared Room",
+    "capacity": 2,
+    "image": "images/room-images/shared-double.jpg",
+    "alt": "Illustration of a shared double room with two study desks",
+    "amenities": [
+      "Two Desks",
+      "Quiet Floor",
+      "High-Speed Wi-Fi",
+      "Laundry Access"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A shared double room on a quieter floor for two focused students."
+  },
+  {
+    "id": "room-114",
+    "name": "Holly Compact Private",
+    "price": 610,
+    "type": "Private Room",
+    "capacity": 1,
+    "image": "images/room-images/private-corner.jpg",
+    "alt": "Illustration of a compact private room with a bed and desk",
+    "amenities": [
+      "Private Desk",
+      "Compact Storage",
+      "High-Speed Wi-Fi",
+      "Study Lounge"
+    ],
+    "availability": "Limited",
+    "featured": false,
+    "description": "A compact private room for students who want privacy at a lower price."
+  },
+  {
+    "id": "room-115",
+    "name": "River Shared Hall",
+    "price": 395,
+    "type": "Shared Room",
+    "capacity": 6,
+    "image": "images/room-images/shared-loft.jpg",
+    "alt": "Illustration of a shared student hall with loft beds",
+    "amenities": [
+      "Loft Beds",
+      "Shared Kitchen",
+      "Laundry Access",
+      "Community Events"
+    ],
+    "availability": "Available",
+    "featured": false,
+    "description": "A friendly shared hall room close to the main community lounge."
+  }
+]
