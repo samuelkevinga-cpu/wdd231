@@ -1,6 +1,5 @@
 /* styles.css — shared look for all NestU pages */
 
-/* Color variables used across the site */
 :root {
   --dark-green: #1b5e20;
   --medium-green: #388e3c;
@@ -11,7 +10,9 @@
   --medium-blue: #01579b;
   --accent-blue: #014a7a;
   --border: #d6e4d8;
-  --shadow: 0 12px 30px rgba(33, 33, 33, 0.1);
+  --error: #b00020;
+  --shadow: 0 12px 30px rgb(from var(--dark-gray) r g b / 0.1);
+  --card-shadow: 0 6px 18px rgb(from var(--dark-gray) r g b / 0.06);
 }
 
 * {
@@ -41,7 +42,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+.logo {
   margin: 0;
   color: var(--dark-green);
   font-family: "Poppins", Arial, sans-serif;
@@ -64,6 +66,53 @@ p {
   border: 0;
 }
 
+.eyebrow,
+.button,
+.filter-button,
+.feature-icon,
+.pill,
+.room-price,
+.weather-list span,
+.submitted-list span,
+.booking-form label,
+.site-footer a {
+  font-weight: 800;
+}
+
+.menu-button,
+.primary-nav a,
+.button,
+.filter-button,
+.room-card img,
+.modal-content img,
+.booking-form input,
+.booking-form select,
+.close-modal {
+  border-radius: 6px;
+}
+
+.menu-button,
+.button,
+.filter-button,
+.room-card,
+.close-modal,
+.nav-overlay {
+  cursor: pointer;
+}
+
+.primary-nav a:hover,
+.primary-nav a.active,
+.filter-button.active,
+.filter-button:hover {
+  color: var(--white);
+  background: var(--dark-green);
+}
+
+.nav-overlay[hidden],
+.modal[hidden] {
+  display: none;
+}
+
 /* ----- Header and nav ----- */
 .site-header {
   position: sticky;
@@ -78,8 +127,6 @@ p {
 }
 
 .logo {
-  color: var(--dark-green);
-  font-family: "Poppins", Arial, sans-serif;
   font-size: 1.65rem;
   font-weight: 700;
   text-decoration: none;
@@ -95,8 +142,6 @@ p {
   padding: 10px;
   background: var(--light-green);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .menu-button span {
@@ -125,12 +170,7 @@ p {
   z-index: 30;
   border: 0;
   padding: 0;
-  background: rgba(33, 33, 33, 0.55);
-  cursor: pointer;
-}
-
-.nav-overlay[hidden] {
-  display: none;
+  background: rgb(from var(--dark-gray) r g b / 0.55);
 }
 
 body.menu-open {
@@ -149,7 +189,6 @@ body.menu-open {
   padding: 5rem 1rem 1rem;
   background: var(--white);
   border-right: 1px solid var(--border);
-  border-radius: 0;
   box-shadow: var(--shadow);
   transform: translateX(-100%);
   transition: transform 0.25s ease;
@@ -165,15 +204,7 @@ body.menu-open {
 .primary-nav a {
   padding: 0.75rem;
   color: var(--dark-gray);
-  font-weight: 700;
   text-decoration: none;
-  border-radius: 6px;
-}
-
-.primary-nav a:hover,
-.primary-nav a.active {
-  color: var(--white);
-  background: var(--dark-green);
 }
 
 /* ----- Home page hero ----- */
@@ -183,7 +214,7 @@ body.menu-open {
   align-items: center;
   padding: 5rem 1rem;
   background:
-    linear-gradient(90deg, rgba(27, 94, 32, 0.92), rgba(27, 94, 32, 0.62)),
+    linear-gradient(90deg, color-mix(in srgb, var(--dark-green) 92%, transparent), color-mix(in srgb, var(--dark-green) 62%, transparent)),
     url("../images/hero-residence.svg") center / cover no-repeat;
 }
 
@@ -192,9 +223,13 @@ body.menu-open {
   color: var(--white);
 }
 
+.hero h1,
+.hero .eyebrow {
+  color: var(--white);
+}
+
 .hero h1 {
   margin: 0.25rem 0 1rem;
-  color: var(--white);
   font-size: clamp(2.5rem, 12vw, 4.8rem);
 }
 
@@ -206,13 +241,8 @@ body.menu-open {
 .eyebrow {
   color: var(--accent-blue);
   font-size: 0.78rem;
-  font-weight: 800;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
-}
-
-.hero .eyebrow {
-  color: var(--white);
 }
 
 .section-soft .eyebrow {
@@ -229,10 +259,7 @@ body.menu-open {
   color: var(--white);
   background: var(--medium-blue);
   border: 0;
-  border-radius: 6px;
-  font-weight: 800;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .button:hover,
@@ -245,12 +272,14 @@ body.menu-open {
 .page-intro {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
+}
+
+.section {
   padding: 3rem 0;
 }
 
 .page-intro {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding: 4rem 0 1rem;
 }
 
 .page-intro h1,
@@ -266,18 +295,27 @@ body.menu-open {
 .section-soft {
   width: 100%;
   max-width: none;
-  padding-right: max(1rem, calc((100% - 1120px) / 2));
-  padding-left: max(1rem, calc((100% - 1120px) / 2));
+  padding-inline: max(1rem, calc((100% - 1120px) / 2));
   background: var(--light-green);
 }
 
 /* ----- Grid layouts (amenities, rooms, two-column) ----- */
 .amenity-grid,
 .room-grid,
-.two-column {
+.two-column,
+.community {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+.amenity-grid,
+.room-grid,
+.two-column {
+  grid-template-columns: 1fr;
+}
+
+.community {
+  align-items: start;
 }
 
 .feature-card,
@@ -288,7 +326,7 @@ body.menu-open {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(33, 33, 33, 0.06);
+  box-shadow: var(--card-shadow);
 }
 
 .feature-icon {
@@ -300,7 +338,6 @@ body.menu-open {
   color: var(--dark-green);
   background: var(--light-blue);
   border-radius: 50%;
-  font-weight: 800;
 }
 
 .feature-card h3,
@@ -308,12 +345,6 @@ body.menu-open {
 .info-panel h2 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-}
-
-.community {
-  display: grid;
-  gap: 1rem;
-  align-items: start;
 }
 
 /* ----- Room filters and cards ----- */
@@ -324,21 +355,16 @@ body.menu-open {
   margin-bottom: 1rem;
 }
 
+.pill,
+.filter-button {
+  color: var(--dark-green);
+  background: var(--light-green);
+}
+
 .filter-button {
   min-height: 42px;
   padding: 0.6rem 0.85rem;
-  color: var(--dark-green);
-  background: var(--light-green);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.filter-button.active,
-.filter-button:hover {
-  color: var(--white);
-  background: var(--dark-green);
 }
 
 .results-count {
@@ -351,7 +377,6 @@ body.menu-open {
   flex-direction: column;
   gap: 0.8rem;
   text-align: left;
-  cursor: pointer;
 }
 
 .room-card img,
@@ -359,7 +384,6 @@ body.menu-open {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  border-radius: 6px;
   background: var(--light-green);
 }
 
@@ -371,22 +395,18 @@ body.menu-open {
 
 .pill {
   padding: 0.25rem 0.5rem;
-  color: var(--dark-green);
-  background: var(--light-green);
   border-radius: 999px;
   font-size: 0.85rem;
-  font-weight: 800;
 }
 
 .pill.blue {
-  color: #015177;
+  color: var(--medium-blue);
   background: var(--light-blue);
 }
 
 .room-price {
   color: var(--accent-blue);
   font-size: 1.4rem;
-  font-weight: 800;
 }
 
 /* ----- Room detail modal ----- */
@@ -397,11 +417,7 @@ body.menu-open {
   display: grid;
   place-items: center;
   padding: 1rem;
-  background: rgba(33, 33, 33, 0.7);
-}
-
-.modal[hidden] {
-  display: none;
+  background: rgb(from var(--dark-gray) r g b / 0.7);
 }
 
 .modal-content {
@@ -423,9 +439,7 @@ body.menu-open {
   color: var(--white);
   background: var(--dark-green);
   border: 0;
-  border-radius: 6px;
   font-size: 1.8rem;
-  cursor: pointer;
 }
 
 .map-frame iframe {
@@ -447,7 +461,6 @@ body.menu-open {
 .weather-list span,
 .submitted-list span {
   display: block;
-  font-weight: 800;
   color: var(--dark-green);
 }
 
@@ -461,7 +474,6 @@ body.menu-open {
 .payment-fieldset {
   display: grid;
   gap: 0.35rem;
-  font-weight: 800;
 }
 
 .booking-form input,
@@ -469,8 +481,7 @@ body.menu-open {
   width: 100%;
   min-height: 46px;
   padding: 0.65rem;
-  border: 1px solid #9bb09e;
-  border-radius: 6px;
+  border: 1px solid var(--border);
   font: inherit;
 }
 
@@ -495,13 +506,9 @@ body.menu-open {
 
 .error-message {
   min-height: 1.2rem;
-  color: #b00020;
+  color: var(--error);
   font-size: 0.9rem;
   font-weight: 700;
-}
-
-.attributions {
-  border-top: 1px solid var(--border);
 }
 
 /* ----- Footer ----- */
@@ -512,9 +519,4 @@ body.menu-open {
   padding: 1.5rem 1rem;
   color: var(--white);
   background: var(--dark-green);
-}
-
-.site-footer a {
-  color: var(--white);
-  font-weight: 800;
 }
